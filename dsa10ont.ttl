@@ -1,0 +1,150 @@
+@prefix : <http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movie/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movie/> .
+
+<http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology> rdf:type owl:Ontology ;
+                                                                                    rdfs:comment "This is an ontology about movie recommender system" .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Adventure
+:Adventure rdf:type owl:Class ;
+           rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Animation
+:Animation rdf:type owl:Class ;
+           rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Children
+:Children rdf:type owl:Class ;
+          rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Comedy
+:Comedy rdf:type owl:Class ;
+        rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Crime
+:Crime rdf:type owl:Class ;
+       rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Documentary
+:Documentary rdf:type owl:Class ;
+             rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Drama
+:Drama rdf:type owl:Class ;
+       rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Fantasy
+:Fantasy rdf:type owl:Class ;
+         rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Film_Noir
+:Film_Noir rdf:type owl:Class ;
+           rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Genre
+:Genre rdf:type owl:Class ;
+       rdfs:subClassOf :Movie .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Horror
+:Horror rdf:type owl:Class ;
+        rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#IMAX
+:IMAX rdf:type owl:Class ;
+      rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Movie
+:Movie rdf:type owl:Class ;
+       rdfs:subClassOf :Movie_recommender .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Movie_ID
+:Movie_ID rdf:type owl:Class ;
+          rdfs:subClassOf :Movie .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Movie_recommender
+:Movie_recommender rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Musical
+:Musical rdf:type owl:Class ;
+         rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Mystery
+:Mystery rdf:type owl:Class ;
+         rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Plot
+:Plot rdf:type owl:Class ;
+      rdfs:subClassOf :Movie .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Predicted_evaluation
+:Predicted_evaluation rdf:type owl:Class ;
+                      rdfs:subClassOf :Movie .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Ratings
+:Ratings rdf:type owl:Class ;
+         rdfs:subClassOf :User .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Romance
+:Romance rdf:type owl:Class ;
+         rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Sci-Fi
+:Sci-Fi rdf:type owl:Class ;
+        rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Similarity
+:Similarity rdf:type owl:Class ;
+            rdfs:subClassOf :Movie .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#Thriller
+:Thriller rdf:type owl:Class ;
+          rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#User
+:User rdf:type owl:Class ;
+      rdfs:subClassOf :Movie_recommender .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#User_ID
+:User_ID rdf:type owl:Class ;
+         rdfs:subClassOf :User .
+
+
+###  http://www.semanticweb.org/ranjitkumarsethuraman/ontologies/2023/3/movieontology#War
+:War rdf:type owl:Class ;
+     rdfs:subClassOf :Genre .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
